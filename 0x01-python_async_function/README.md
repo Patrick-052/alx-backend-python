@@ -14,6 +14,8 @@ This project is about Python - Async Module and asynchronous programming.
 - [Async IO in Python](https://realpython.com/async-io-python/)
 - [Random module](https://docs.python.org/3/library/random.html)
 
+- [Sample Quiz(s)](https://docs.google.com/document/d/10OxsUQnLwlrx1rp1MaunclAa0gaZBMwHFtrzKOO8bn8/edit?usp=sharing)
+
 
                       ____   _  _____ ____  ___ ____ _  __
                      |  _ \ / \|_   _|  _ \|_ _/ ___| |/ /

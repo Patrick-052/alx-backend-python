@@ -13,6 +13,8 @@ This project is majoring in Async Comprehension and Async generators in python
 - [Additional Info on Async Comprehensions/Generators](https://www.blog.pythonlibrary.org/2017/02/14/whats-new-in-python-asynchronous-comprehensions-generators/)
 - [Type-hints for Generators](https://docs.python.org/3.6/library/typing.html#typing.Generator)
 
+- [Sample Quiz(s)](https://docs.google.com/document/d/17tv9jxnizU5C2UIzgaD-aeuru1URSqP67yZP6MV-DDs/edit?usp=sharing)
+
 
                       ____   _  _____ ____  ___ ____ _  __
                      |  _ \ / \|_   _|  _ \|_ _/ ___| |/ /

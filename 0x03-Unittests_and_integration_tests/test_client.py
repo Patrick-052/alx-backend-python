@@ -13,13 +13,21 @@ class TestGithubOrgClient(TestCase):
     @parameterized.expand([
         'google',
         'abc'
-    ])
+        ])
     @patch('client.get_json')
     def test_org(self, test_org_name, mocked_get):
         """ Test case to acertain that the GithubOrgClient.org
             method returns the correct value """
         test_org_url = f'https://api.github.com/orgs/{test_org_name}'
-        test_payload = {"payload": True}
-        mocked_get.return_value = test_payload
+        mocked_get.return_value = {"payload": True}
         github_client = GithubOrgClient(test_org_name)
         self.assertEqual(github_client.org, mocked_get.return_value)
+
+    def test_public_repos_url(self):
+        """ Test case to acertain that the _public_repos_url
+            method returns the correct value """
+        with patch.object(GithubOrgClient, 'org',
+                          new_callable=PropertyMock) as mocked_org:
+            mocked_org.return_value = {"repos_url": "test_url"}
+            github_client = GithubOrgClient('test')
+            self.assertEqual(github_client._public_repos_url, "test_url")
